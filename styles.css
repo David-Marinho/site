@@ -12,14 +12,26 @@ body{
     height: 72px;
 }
 
+.menu-button{
+    position: absolute;
+    right: 0px;
+    padding-right: 10px;
+    top: 26px;
+}
+
+main{
+    padding: 10px;
+}
+
 #banner{
     display: flex;
     justify-content: center;
 }
 
 #banner img{
-    width: 353px;
-    height: 196px;
+    margin-top: 20px;
+    width: 390px;
+    height: 218px;
 }
 
 #serviços img{
@@ -70,9 +82,11 @@ button{
 #about{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #about p{
     text-align: justify;
-    width: 245px;
+    width: 200px;
+    font-size: 16px;
 }
