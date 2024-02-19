@@ -1,0 +1,78 @@
+body{
+    margin: 0px;
+}
+
+#logo-section{
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    width: 116px;
+    height: 72px;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+}
+
+#banner img{
+    width: 353px;
+    height: 196px;
+}
+
+#serviços img{
+    width: 32px;
+    height: 32px;
+}
+
+#serviços li {
+    display: flex;
+    flex-direction: column;
+}
+
+#serviços {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.button-section{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 200px;
+    height: 45px;
+    background-color: #EC8D39;
+    color: #fff;
+    border-radius: 5px;
+    border: 0px;
+}
+
+#form{
+    background-color: #284D5C;
+}
+
+#form h2{
+    color: #EC8D39;
+    text-align: center;
+}
+
+#about img{
+    width: 160px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+#about{
+    display: flex;
+    justify-content: space-between;
+}
+
+#about p{
+    text-align: justify;
+    width: 245px;
+}
