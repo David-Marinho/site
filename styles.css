@@ -1,5 +1,8 @@
+html{
+    min-width: 325px;
+}
 body{
-    margin: 0px;
+    margin: 5px 0px;
 }
 
 #logo-section{
@@ -23,15 +26,28 @@ main{
     padding: 10px;
 }
 
-#banner{
-    display: flex;
-    justify-content: center;
+#slider-wrapper {
+	position: relative;
+	max-width: 48rem;
+	margin: 0 auto;
 }
 
-#banner img{
-    margin-top: 20px;
-    width: 390px;
-    height: 218px;
+#slider {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+#slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
 }
 
 #serviços img{
@@ -77,6 +93,7 @@ button{
     width: 160px;
     height: 200px;
     border-radius: 5px;
+    min-width: 100px;
 }
 
 #about{
@@ -89,4 +106,18 @@ button{
     text-align: justify;
     width: 200px;
     font-size: 16px;
+}
+
+@media screen and (max-width: 385px) {
+    #about p{
+        width: 140px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    #about p{
+        width: 100px;
+        font-size: 15px;
+    }
 }
