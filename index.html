@@ -11,9 +11,25 @@
     <header>
         <div id="logo-section">
             <img id="logo" src="image/logo.png" alt="" srcset="">
-            <span class="menu-button material-symbols-outlined">menu</span>
+            <div class="menu">
+                <a href="">Home</a></li>
+                <a href="">Quem Somos</a></li>
+                <a href="">serviços</a></li>
+                <a href="">Peça um Orçamento</a></li>
+            </div>
+            <button class="menu-button" onclick="openMenu()">
+                <span class="material-symbols-outlined">menu</span>
+            </button> 
         </div>    
 
+        <div id="menu-list">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Quem Somos</a></li>
+                <li><a href="">serviços</a></li>
+                <li><a href="">Peça um Orçamento</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
@@ -25,7 +41,6 @@
             </div>
         </div>
         
-
         <section>
             <ul id="serviços">
                 <li>
@@ -50,7 +65,7 @@
             </ul>
             
             <div class="button-section">
-                <button>Conheça nossos serviços</button>
+                <button class="primary-btn services">Conheça nossos serviços</button>
             </div>  
         </section>
         
@@ -100,7 +115,7 @@
                     <textarea name="" id="" cols="30" rows="5"></textarea>
                 </div>
                 <div>
-                    <button id="submit-btn" type="submit">
+                    <button class="primary-btn" type="submit">
                         <p>Solicite um orçamento</p>
                         <img src="image/send-icon.png" alt="">
                     </button>
@@ -117,5 +132,7 @@
     <footer>
 
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
